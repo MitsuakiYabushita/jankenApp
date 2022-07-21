@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nOs-3H-pTT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--じゃんけん...ぽん-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="janken" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sazae1" translatesAutoresizingMaskIntoConstraints="NO" id="hm9-vW-6F9">
+                                <rect key="frame" x="10" y="118" width="394" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="4Gr-fA-wbd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="じゃんけん..？？" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6rX-nM-C2B">
+                                <rect key="frame" x="20" y="468" width="374" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="MZC-UK-ljj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="70"/>
+                                <color key="textColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="-1"/>
+                            </label>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PsE-sP-PRE" customClass="MaruButton" customModule="janken" customModuleProvider="target">
+                                <rect key="frame" x="137" y="558" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="8hi-S8-Pis"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="WeW-6I-QuO"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="pa2"/>
+                                <connections>
+                                    <action selector="tapPa:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vtI-CG-WBY"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U19-rG-6oG" customClass="MaruButton" customModule="janken" customModuleProvider="target">
+                                <rect key="frame" x="47" y="678" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="OXy-wS-0Fk"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="q59-8D-fMR"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="choki2"/>
+                                <connections>
+                                    <action selector="tapChoki:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5qf-he-mPq"/>
+                                </connections>
+                            </button>
+                            <button clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awl-ha-VzU" customClass="MaruButton" customModule="janken" customModuleProvider="target">
+                                <rect key="frame" x="227" y="678" width="140" height="140"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="0FX-BL-Dpi"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="140" id="dt6-Io-EQB"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="gu2"/>
+                                <connections>
+                                    <action selector="tapGu:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gGe-QE-f88"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.91764705879999997" green="1" blue="0.81568627449999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="hm9-vW-6F9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="8QX-fv-fCL"/>
+                            <constraint firstItem="6rX-nM-C2B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DiK-gE-vWL"/>
+                            <constraint firstItem="6rX-nM-C2B" firstAttribute="top" secondItem="hm9-vW-6F9" secondAttribute="bottom" constant="50" id="EdX-la-Irs"/>
+                            <constraint firstItem="U19-rG-6oG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-90" id="HRb-Sa-qLt"/>
+                            <constraint firstItem="awl-ha-VzU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="Jei-Hl-B96"/>
+                            <constraint firstItem="PsE-sP-PRE" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="180" id="Qel-Os-CwQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6rX-nM-C2B" secondAttribute="trailing" constant="20" id="SkZ-wg-pC0"/>
+                            <constraint firstItem="U19-rG-6oG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="300" id="Tb5-3B-ILe"/>
+                            <constraint firstItem="6rX-nM-C2B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="dWu-cK-Ar3"/>
+                            <constraint firstItem="awl-ha-VzU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="90" id="jcS-Tm-LUi"/>
+                            <constraint firstItem="hm9-vW-6F9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kd0-xq-p1S"/>
+                            <constraint firstItem="PsE-sP-PRE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kjh-D1-aXw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hm9-vW-6F9" secondAttribute="trailing" constant="10" id="z7b-dJ-OZh"/>
+                            <constraint firstItem="hm9-vW-6F9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="zCl-bS-PLf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="じゃんけん...ぽん" id="0rw-SX-KeB"/>
+                    <connections>
+                        <outlet property="chokiButton" destination="U19-rG-6oG" id="Bmn-BJ-cYB"/>
+                        <outlet property="guButton" destination="awl-ha-VzU" id="l13-tj-S2b"/>
+                        <outlet property="jankenImage" destination="hm9-vW-6F9" id="oBC-Yz-67g"/>
+                        <outlet property="paButton" destination="PsE-sP-PRE" id="dHn-pF-3f3"/>
+                        <outlet property="resultLabel" destination="6rX-nM-C2B" id="9Bw-XU-uej"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="83.705357142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Zox-Ph-QOi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nOs-3H-pTT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="R4a-ge-b9i">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <navigationBarAppearance key="standardAppearance"/>
+                        <navigationBarAppearance key="scrollEdgeAppearance">
+                            <color key="backgroundColor" red="0.86190593242645264" green="0.93499988317489624" blue="0.15212351083755493" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </navigationBarAppearance>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3bk-Xe-aiY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cx6-vU-kwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="choki2" width="101" height="101"/>
+        <image name="gu2" width="101" height="101"/>
+        <image name="pa2" width="101" height="101"/>
+        <image name="sazae1" width="400" height="300"/>
+    </resources>
+</document>
